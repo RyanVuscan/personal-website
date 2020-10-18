@@ -1,24 +1,32 @@
 import React from 'react';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
+import MainHeader from './components/Headers/MainHeader';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <MainHeader />
+      <Switch>
+        <Route exact path="/">
+          Home
+        </Route>
+        <Route exact path="/about">
+          About
+        </Route>
+        <Route exact path="/projects">
+          Projects
+        </Route>
+        <Route exact path="/contact">
+          Contact
+        </Route>
+        <Route exact path="/resume">
+          Resume
+        </Route>
+        <Redirect to="/" />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
