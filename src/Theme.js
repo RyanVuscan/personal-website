@@ -20,8 +20,7 @@ const colorScheme = {
     main: '#ffad33',
   },
   text: {
-    primary: '#000',
-    secondary: '#2e2e2e',
+    primary: '#f2f2f2',
     disabled: '#eeeeee',
   },
 };
@@ -31,7 +30,6 @@ const theme = createMuiTheme({
     borderRadius: 12,
   },
   palette: {
-    type: 'light',
     primary: {
       main: colorScheme.primary.main,
     },
@@ -61,17 +59,17 @@ const theme = createMuiTheme({
     h1: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '3rem',
     },
     h2: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '2rem',
     },
     h3: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '1.5rem',
     },
     h4: {
       fontFamily: 'Raleway',
@@ -111,7 +109,6 @@ const theme = createMuiTheme({
     button: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
     },
     caption: {
       fontFamily: 'Raleway',
@@ -124,13 +121,7 @@ const theme = createMuiTheme({
       fontSize: 60,
     },
   },
-  overrides: {
-    MuiButton: {
-      containedPrimary: {
-        backgroundColor: '#123456',
-      },
-    },
-  },
+  overrides: {},
 });
 
 export default responsiveFontSizes(theme);
