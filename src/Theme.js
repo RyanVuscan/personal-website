@@ -23,6 +23,9 @@ const colorScheme = {
     primary: '#f2f2f2',
     disabled: '#eeeeee',
   },
+  paper: {
+    color: '#383838',
+  },
 };
 
 const theme = createMuiTheme({
@@ -121,7 +124,13 @@ const theme = createMuiTheme({
       fontSize: 60,
     },
   },
-  overrides: {},
+  overrides: {
+    MuiPaper: {
+      root: {
+        backgroundColor: colorScheme.paper.color,
+      },
+    },
+  },
 });
 
 export default responsiveFontSizes(theme);

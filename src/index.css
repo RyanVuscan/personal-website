@@ -4,7 +4,7 @@ body {
     'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 code {
@@ -15,4 +15,5 @@ html,
 body,
 #root {
   min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
 }
