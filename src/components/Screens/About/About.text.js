@@ -1,30 +1,30 @@
 export default {
   1: {
-    imagePath: 'ntci.jpeg',
-    title: 'Title one',
-    subtitle: 'subtitle one',
+    imagePath: 'ntci.png',
+    title: 'North Toronto Collegiate Institue',
+    subtitle: '2017-2021',
     text:
-      'The knives seemed to have been sparsely decorated, years before, with a random collection of European furniture, as though Deane had once intended to use the place as his home. They floated in the coffin for Armitage’s call. The alarm still oscillated, louder here, the rear of the blowers and the amplified breathing of the fighters. She put his pistol down, picked up her fletcher, dialed the barrel over to single shot, dead man’s skills, obsessions, kneejerk responses. Splayed in his elastic g-web, Case watched the other passengers as he made his way down Shiga from the sushi stall he cradled it in his capsule in some coffin hotel, his hands clawed into the nearest door and watched the other passengers as he rode. The Tessier-Ashpool ice shattered, peeling away from the banks of every computer in the puppet place had been a subunit of Freeside’s security system.',
+    'Located in Midtown Toronto, North Toronto continues to stand as one of the top high-schools in all of Toronto. I study at this school with an emphasis in mathematics, and currently run North Toronto\'s very own Computer Science Club.',
   },
   2: {
-    imagePath: 'ntci.jpeg',
-    title: 'Title one',
-    subtitle: 'subtitle one',
+    imagePath: 'tma.png',
+    title: 'Toronto Mathematics Academy',
+    subtitle: '2017-2020',
     text:
-      'The knives seemed to have been sparsely decorated, years before, with a random collection of European furniture, as though Deane had once intended to use the place as his home. They floated in the coffin for Armitage’s call. The alarm still oscillated, louder here, the rear of the blowers and the amplified breathing of the fighters. She put his pistol down, picked up her fletcher, dialed the barrel over to single shot, dead man’s skills, obsessions, kneejerk responses. Splayed in his elastic g-web, Case watched the other passengers as he made his way down Shiga from the sushi stall he cradled it in his capsule in some coffin hotel, his hands clawed into the nearest door and watched the other passengers as he rode. The Tessier-Ashpool ice shattered, peeling away from the banks of every computer in the puppet place had been a subunit of Freeside’s security system.',
+    'The Toronto Mathematics Academy, also known as TMA, stands as one of the leading night-schools in Toronto for advanced mathematics. For three years I enrolled in mathematical courses, of which one taught to the university level.',
   },
   3: {
-    imagePath: 'ntci.jpeg',
-    title: 'Title one',
-    subtitle: 'subtitle one',
+    imagePath: 'trus.png',
+    title: 'Toys R Us',
+    subtitle: '2019-2020',
     text:
-      'The knives seemed to have been sparsely decorated, years before, with a random collection of European furniture, as though Deane had once intended to use the place as his home. They floated in the coffin for Armitage’s call. The alarm still oscillated, louder here, the rear of the blowers and the amplified breathing of the fighters. She put his pistol down, picked up her fletcher, dialed the barrel over to single shot, dead man’s skills, obsessions, kneejerk responses. Splayed in his elastic g-web, Case watched the other passengers as he made his way down Shiga from the sushi stall he cradled it in his capsule in some coffin hotel, his hands clawed into the nearest door and watched the other passengers as he rode. The Tessier-Ashpool ice shattered, peeling away from the banks of every computer in the puppet place had been a subunit of Freeside’s security system.',
+      'Working as a store clerk, I ran cashier, stocking, sales assistance, and more full-time during the summer and part-time during the school year. Working retail gave me a new-found patience and appreation for teamwork.',
   },
   4: {
     imagePath: 'ntci.jpeg',
-    title: 'Title one',
-    subtitle: 'subtitle one',
+    title: 'catchUp',
+    subtitle: '2020-Present',
     text:
-      'The knives seemed to have been sparsely decorated, years before, with a random collection of European furniture, as though Deane had once intended to use the place as his home. They floated in the coffin for Armitage’s call. The alarm still oscillated, louder here, the rear of the blowers and the amplified breathing of the fighters. She put his pistol down, picked up her fletcher, dialed the barrel over to single shot, dead man’s skills, obsessions, kneejerk responses. Splayed in his elastic g-web, Case watched the other passengers as he made his way down Shiga from the sushi stall he cradled it in his capsule in some coffin hotel, his hands clawed into the nearest door and watched the other passengers as he rode. The Tessier-Ashpool ice shattered, peeling away from the banks of every computer in the puppet place had been a subunit of Freeside’s security system.',
+    'catchUp is a startup founded in early 2020 with the purpose of providing a platform to share course notes with an emphasis on those with learning disabilities. In this startup, I work as a frontend developer.',
   },
 };

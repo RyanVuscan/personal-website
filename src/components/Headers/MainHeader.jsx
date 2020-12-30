@@ -135,14 +135,12 @@ const MainHeader = () => {
               </Slide>
               <Slide in={slideInSubheader} direction={mobile ? 'up' : 'left'} timeout={300}>
                 <Typography variant="h2" align={mobile ? 'center' : 'left'}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, excepturi minima sapiente tenetur
+                  A Canadian full-time student learning to code!
                 </Typography>
               </Slide>
               <Slide in={slideInText} direction={mobile ? 'up' : 'left'} timeout={300}>
                 <Typography variant="h3" align={mobile ? 'center' : 'left'}>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam perferendis itaque assumenda voluptatem
-                  veritatis. Incidunt velit deleniti itaque accusantium ex omnis provident id voluptatibus praesentium.
-                  Perferendis tempora rem doloribus suscipit!{' '}
+                  Thanks for visiting my website. Be sure to explore and see what I'm a part of.
                 </Typography>
               </Slide>
             </Box>
