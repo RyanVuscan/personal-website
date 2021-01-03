@@ -23,5 +23,7 @@ module.exports = {
 
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    'react/prop-types': 0,
   },
 };

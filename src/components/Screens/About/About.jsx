@@ -4,7 +4,7 @@ import text from './About.text';
 
 const About = () => {
   return (
-    <div style={{ minHeight: '100vh', padding: '20px 4rem' }}>
+    <div style={{ minHeight: '100vh', padding: '20px 10%' }}>
       {Object.keys(text).map((key) => (
         <Card
           key={key}

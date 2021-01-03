@@ -1,4 +1,3 @@
-// @ts-check
 import { AppBar, Box, Button, Grid, makeStyles, Slide, Toolbar, Typography, Zoom } from '@material-ui/core';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
@@ -48,6 +47,10 @@ const MainHeader = () => {
     window.open(`${process.env.PUBLIC_URL}/resume.pdf`);
   };
 
+  const onProjectsClick = () => {
+    window.open(`${process.env.PUBLIC_URL}https://github.com/RyanVuscan/`);
+  };
+
   const navigate = (destination) => {
     history.push(destination);
   };
@@ -79,12 +82,7 @@ const MainHeader = () => {
         >
           About
         </Button>
-        <Button
-          className={classes.menuButton}
-          onClick={() => {
-            navigate('/projects');
-          }}
-        >
+        <Button className={classes.menuButton} onClick={onProjectsClick}>
           Projects
         </Button>
         <Button
@@ -135,7 +133,7 @@ const MainHeader = () => {
               </Slide>
               <Slide in={slideInSubheader} direction={mobile ? 'up' : 'left'} timeout={300}>
                 <Typography variant="h2" align={mobile ? 'center' : 'left'}>
-                  A Canadian full-time student learning to code!
+                  {`I'm a full-time student learning to code! Based in Toronto, Canada.`}
                 </Typography>
               </Slide>
               <Slide in={slideInText} direction={mobile ? 'up' : 'left'} timeout={300}>
