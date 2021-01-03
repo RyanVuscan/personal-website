@@ -92,10 +92,10 @@ const Contact = () => {
             />
             <TextField
               id="phoneNumber"
-              label="Phone Number (Optional)"
+              label="Phone Number"
               error={phoneNumberError}
-              helperText="Please enter a valid phone number!"
-              FormHelperTextProps={{ style: { visibility: phoneNumberError ? 'visible' : 'hidden' } }}
+              helperText={phoneNumberError ? 'Please enter a valid phone number!' : '(Optional)'}
+              // FormHelperTextProps={{ style: { visibility: phoneNumberError ? 'visible' : 'hidden' } }}
               style={{ marginBottom: '1rem' }}
               onChange={(e) => setPhoneNumber(e.target.value)}
             />

@@ -4,6 +4,8 @@ import { useHistory } from 'react-router-dom';
 import { timer } from 'rxjs';
 import { take } from 'rxjs/operators';
 
+const mobile = window.innerWidth < 777;
+
 const useStyles = makeStyles((theme) => ({
   root: {
     position: 'absolute',
@@ -23,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     margin: '1vw',
-    fontSize: '2vw',
+    fontSize: mobile ? '4vw' : '2vw',
     padding: '0.5vw',
   },
   toolbar: {
@@ -54,8 +56,6 @@ const MainHeader = () => {
   const navigate = (destination) => {
     history.push(destination);
   };
-
-  const mobile = window.innerWidth < 777;
 
   useEffect(() => {
     timer(1500, 500)
