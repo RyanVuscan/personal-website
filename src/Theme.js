@@ -102,12 +102,12 @@ const theme = createMuiTheme({
     body1: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '1rem',
     },
     body2: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '1rem',
     },
     button: {
       fontFamily: 'Raleway',
@@ -116,18 +116,27 @@ const theme = createMuiTheme({
     caption: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '0.8rem',
     },
     overline: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '1rem',
     },
   },
   overrides: {
     MuiPaper: {
       root: {
         backgroundColor: colorScheme.paper.color,
+      },
+    },
+
+    MuiFormLabel: {
+      root: {
+        color: colorScheme.secondary.main,
+        '&$focused': {
+          color: colorScheme.secondary.main,
+        },
       },
     },
   },

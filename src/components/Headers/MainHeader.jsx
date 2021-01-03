@@ -126,7 +126,13 @@ const MainHeader = () => {
                 }}
               />
             </Zoom>
-            <Box display="flex" flexDirection="column" padding="1rem" justifyContent="center">
+            <Box
+              display="flex"
+              flexDirection="column"
+              padding="1rem"
+              justifyContent="center"
+              style={{ overflow: 'hidden' }}
+            >
               <Slide in={slideInHeader} direction={mobile ? 'up' : 'left'} timeout={500}>
                 <Typography
                   variant="h1"
