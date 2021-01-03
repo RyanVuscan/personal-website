@@ -112,6 +112,7 @@ const MainHeader = () => {
             gridTemplateColumns={mobile ? '' : '1fr 1fr'}
             height="100%"
             width="100%"
+            gridGap={!mobile && 'min(5%, 3vh)'}
           >
             <Zoom timeout={1000} in={true}>
               <Box
@@ -125,9 +126,13 @@ const MainHeader = () => {
                 }}
               />
             </Zoom>
-            <Box display="flex" flexDirection="column" padding="1rem">
+            <Box display="flex" flexDirection="column" padding="1rem" justifyContent="center">
               <Slide in={slideInHeader} direction={mobile ? 'up' : 'left'} timeout={500}>
-                <Typography variant="h1" align={mobile ? 'center' : 'left'}>
+                <Typography
+                  variant="h1"
+                  align={mobile ? 'center' : 'left'}
+                  style={{ fontWeight: 800, fontSize: mobile ? null : '4rem' }}
+                >
                   Ryan Vuscan
                 </Typography>
               </Slide>
@@ -137,8 +142,8 @@ const MainHeader = () => {
                 </Typography>
               </Slide>
               <Slide in={slideInText} direction={mobile ? 'up' : 'left'} timeout={300}>
-                <Typography variant="h3" align={mobile ? 'center' : 'left'}>
-                  Thanks for visiting my website. Be sure to explore and see what I'm a part of.
+                <Typography variant="h4" align={mobile ? 'center' : 'left'}>
+                  {`Thanks for visiting my website. Be sure to explore and see what I'm a part of.`}
                 </Typography>
               </Slide>
             </Box>

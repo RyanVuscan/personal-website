@@ -77,7 +77,7 @@ const theme = createMuiTheme({
     h4: {
       fontFamily: 'Raleway',
       fontWeight: 'normal',
-      fontSize: 60,
+      fontSize: '1.2rem',
     },
     h5: {
       fontFamily: 'Raleway',
