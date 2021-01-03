@@ -2,8 +2,8 @@ const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 
-const gmailEmail = functions.config().gmail.login;
-const gmailPassword = functions.config().gmail.pass;
+const gmailEmail = functions.config().gmail.email;
+const gmailPassword = functions.config().gmail.password;
 
 admin.initializeApp();
 
@@ -22,8 +22,8 @@ exports.sendEmail = functions.database.ref('contacts/{contactId}').onCreate((sna
     `<strong>Message:</strong>\n${snap.val().message}`;
 
   const mailOptions = {
-    from: gmailLogin,
-    to: gmailLogin,
+    from: gmailEmail,
+    to: gmailEmail,
     subject: 'Personal Email Contact Form Submission', // Subject line
     text: `${snap.val().message}`, // plain text body
     html: `<p style="white-space: pre-wrap">${formattedMessage}</p>`, // html body

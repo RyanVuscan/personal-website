@@ -1,7 +1,6 @@
-// @ts-check
 import { Box, Button, Paper, TextField, Typography } from '@material-ui/core';
 import React, { useState } from 'react';
-// import firebase from '../../firebase';
+import firebase from '../../../firebase';
 import { validateEmail, validatePhoneNumber, validateMessage } from '../../Utility/Validation';
 
 const Contact = () => {
@@ -14,16 +13,16 @@ const Contact = () => {
   const [phoneNumberError, setPhoneNumberError] = useState(false);
   const [messageError, setMessageError] = useState(false);
 
-  // const submitToDB = () => {
-  //   firebase
-  //     .database()
-  //     .ref('contacts')
-  //     .push({
-  //       email,
-  //       phoneNumber: phoneNumber || null,
-  //       message,
-  //     });
-  // };
+  const submitToDB = () => {
+    firebase
+      .database()
+      .ref('contacts')
+      .push({
+        email,
+        phoneNumber: phoneNumber || null,
+        message,
+      });
+  };
 
   const handleSubmitAccountInfo = (event) => {
     event.preventDefault();
@@ -33,7 +32,7 @@ const Contact = () => {
       validateMessage(message, setMessageError)
     ) {
       setSubmitted(true);
-      // submitToDB();
+      submitToDB();
       return true;
     }
     validateEmail(email, setEmailError);
