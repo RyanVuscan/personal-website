@@ -8,6 +8,10 @@ import Contact from './components/Screens/Contact/Contact';
 import Projects from './components/Screens/Projects/Projects';
 import ScrollToTop from './components/Utility/ScrollToTop';
 
+import smoothscroll from 'smoothscroll-polyfill';
+// kick off the polyfill!
+smoothscroll.polyfill();
+
 const App = () => {
   return (
     <Router>

@@ -42,6 +42,7 @@ const Card = ({ imagePath, imageLeft, title, subtitle, text, paperStyle }) => {
                 width: '100%',
                 height: 'auto',
               }}
+              alt={`${title} logo`}
             />
           </Box>
         )}
